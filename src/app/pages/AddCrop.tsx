@@ -1,4 +1,5 @@
-import { ArrowLeft, Calendar } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import { API_BASE_URL } from "../config";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useAuth } from "../context/AuthContext";
@@ -35,7 +36,7 @@ export function AddCrop() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/add-crop", {
+      const response = await fetch(`${API_BASE_URL}/add-crop`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

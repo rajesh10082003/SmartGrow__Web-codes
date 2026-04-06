@@ -1,5 +1,6 @@
 import React from "react";
-import { User, Sprout, Calendar, Cpu, TrendingUp, Settings, Edit, LogOut } from "lucide-react";
+import { API_BASE_URL } from "../config";
+import { Sprout, Calendar, Cpu, TrendingUp, Settings, Edit, LogOut } from "lucide-react";
 import { Link, useNavigate } from "react-router";
 import { useAuth } from "../context/AuthContext";
 import { Button } from "./ui/button";
@@ -12,7 +13,7 @@ export function UserProfile() {
   // Load stats and fresh user object data globally right upon mounting the View
   React.useEffect(() => {
     if (user?.id) {
-      fetch(`http://localhost:5000/profile-stats/${user.id}`)
+      fetch(`${API_BASE_URL}/profile-stats/${user.id}`)
         .then(res => res.json())
         .then(data => {
           if (!data.error) {
@@ -32,7 +33,7 @@ export function UserProfile() {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:5000/logout", { method: "POST" });
+      await fetch(`${API_BASE_URL}/logout`, { method: "POST" });
     } catch (e) {
       console.error(e);
     }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_BASE_URL } from "../config";
 import { Link, useNavigate } from "react-router";
 import { Leaf, Mail, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
@@ -20,7 +21,7 @@ export function ForgotPassword() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/forgot-password", {
+      const response = await fetch(`${API_BASE_URL}/forgot-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

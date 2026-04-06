@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { API_BASE_URL } from "../config";
 import { Link, useNavigate, useLocation } from "react-router";
 import { Leaf, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
@@ -43,7 +44,7 @@ export function VerifyOTP() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/verify-reset-otp", {
+      const response = await fetch(`${API_BASE_URL}/verify-reset-otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp: otpValue }),
@@ -66,7 +67,7 @@ export function VerifyOTP() {
     inputRefs.current[0]?.focus();
 
     try {
-      const response = await fetch("http://localhost:5000/forgot-password", {
+      const response = await fetch(`${API_BASE_URL}/forgot-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

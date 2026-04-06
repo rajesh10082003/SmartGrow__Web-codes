@@ -1,4 +1,4 @@
-import { Smartphone, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function MobileAppPreview() {

@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { API_BASE_URL } from "../config";
 import { Link, useNavigate, useLocation } from "react-router";
-import { Leaf, Lock, Eye, EyeOff, CheckCircle } from "lucide-react";
+import { Leaf, Lock, Eye, EyeOff } from "lucide-react";
 import { Button } from "../components/ui/button";
 
 export function ResetPassword() {
@@ -32,7 +33,7 @@ export function ResetPassword() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/reset-password", {
+      const response = await fetch(`${API_BASE_URL}/reset-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

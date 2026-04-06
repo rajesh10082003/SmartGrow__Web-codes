@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_BASE_URL } from "../config";
 import { Link, useNavigate } from "react-router";
 import { useAuth } from "../context/AuthContext";
 import { User, Mail, Phone, Save } from "lucide-react";
@@ -36,7 +37,7 @@ export function EditProfile() {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/edit-profile/${user.id}`, {
+      const response = await fetch(`${API_BASE_URL}/edit-profile/${user.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router";
+import { API_BASE_URL } from "../config";
 import { Bell, Globe, HelpCircle, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
@@ -10,7 +11,7 @@ export function Settings() {
 
   useEffect(() => {
     if (user?.id) {
-      fetch(`http://localhost:5000/get-notifications/${user.id}?type=all`)
+      fetch(`${API_BASE_URL}/get-notifications/${user.id}?type=all`)
         .then(res => res.json())
         .then(data => {
           if (Array.isArray(data)) {

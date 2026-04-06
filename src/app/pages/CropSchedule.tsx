@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_BASE_URL } from "../config";
 import { useParams, useNavigate } from "react-router";
 import { ArrowLeft, Clock, Droplets, Thermometer, Activity, Calendar } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
@@ -15,7 +16,7 @@ export function CropSchedule() {
 
     useEffect(() => {
         if (user?.id) {
-            fetch(`http://localhost:5000/get-crops/${user.id}`)
+            fetch(`${API_BASE_URL}/get-crops/${user.id}`)
                 .then(res => res.json())
                 .then(data => {
                     if (Array.isArray(data)) {

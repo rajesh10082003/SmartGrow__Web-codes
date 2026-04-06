@@ -1,0 +1,6 @@
+﻿src/app/components/MobileAppPreview.tsx(1,10): error TS6133: 'Smartphone' is declared but its value is never read.
+src/app/components/UserProfile.tsx(2,10): error TS6133: 'User' is declared but its value is never read.
+src/app/pages/AddCrop.tsx(1,21): error TS6133: 'Calendar' is declared but its value is never read.
+src/app/pages/AddDevice.tsx(1,10): error TS6133: 'ArrowLeft' is declared but its value is never read.
+src/app/pages/AddDevice.tsx(1,59): error TS6133: 'CheckCircle2' is declared but its value is never read.
+src/app/pages/ResetPassword.tsx(3,35): error TS6133: 'CheckCircle' is declared but its value is never read.

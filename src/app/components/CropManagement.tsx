@@ -1,4 +1,5 @@
 import { Calendar, TrendingUp, Plus } from "lucide-react";
+import { API_BASE_URL } from "../config";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { Progress } from "./ui/progress";
@@ -14,7 +15,7 @@ export function CropManagement() {
 
   useEffect(() => {
     if (user?.id) {
-      fetch(`http://localhost:5000/get-crops/${user.id}`)
+      fetch(`${API_BASE_URL}/get-crops/${user.id}`)
         .then((res) => res.json())
         .then((data) => {
           if (Array.isArray(data)) {

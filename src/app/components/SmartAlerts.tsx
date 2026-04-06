@@ -1,4 +1,5 @@
 import { AlertTriangle, Droplets, Wrench, Clock, Trash2, CheckCircle2, Info } from "lucide-react";
+import { API_BASE_URL } from "../config";
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 
@@ -41,7 +42,7 @@ export function SmartAlerts() {
   const fetchAlerts = async () => {
     if (!user?.id) return;
     try {
-      const res = await fetch(`http://localhost:5000/get-notifications/${user.id}?type=all`);
+      const res = await fetch(`${API_BASE_URL}/get-notifications/${user.id}?type=all`);
       const data = await res.json();
       let combinedAlerts: any[] = [];
       if (Array.isArray(data)) {
@@ -89,7 +90,7 @@ export function SmartAlerts() {
       return;
     }
     try {
-      await fetch(`http://localhost:5000/delete-notification/${id}`, { method: 'DELETE' });
+      await fetch(`${API_BASE_URL}/delete-notification/${id}`, { method: 'DELETE' });
       setAlerts(alerts.filter(a => a.id !== id));
     } catch (e) {
       console.error(e);
@@ -106,7 +107,7 @@ export function SmartAlerts() {
       return;
     }
     try {
-      await fetch(`http://localhost:5000/mark-read/${id}`, { method: 'PUT' });
+      await fetch(`${API_BASE_URL}/mark-read/${id}`, { method: 'PUT' });
       setAlerts(alerts.map(a => a.id === id ? { ...a, is_read: true } : a));
     } catch (e) {
       console.error(e);

@@ -1,0 +1,255 @@
+﻿ 
+Interface name : Wi-Fi 
+There are 10 networks currently visible. 
+
+SSID 1 : SIMATS
+    Network type            : Infrastructure
+    Authentication          : WPA2-Enterprise
+    Encryption              : CCMP 
+    BSSID 1                 : 94:18:65:ba:95:88
+         Signal             : 31%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 36 
+         Bss Load:
+             Connected Stations:         1
+             Channel Utilization:        83 (32 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 2                 : e0:46:ee:5e:18:68
+         Signal             : 67%  
+         Radio type         : 802.11ax
+         Band               : 2.4 GHz
+         Channel            : 11 
+         Bss Load:
+             Connected Stations:         0
+             Channel Utilization:        196 (76 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 3                 : 94:18:65:bb:1c:e8
+         Signal             : 50%  
+         Radio type         : 802.11ax
+         Band               : 2.4 GHz
+         Channel            : 11 
+         Bss Load:
+             Connected Stations:         4
+             Channel Utilization:        192 (75 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 4                 : e0:46:ee:5f:95:a8
+         Signal             : 70%  
+         Radio type         : 802.11ax
+         Band               : 2.4 GHz
+         Channel            : 6 
+         Bss Load:
+             Connected Stations:         4
+             Channel Utilization:        203 (79 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 5                 : e0:46:ee:5d:df:88
+         Signal             : 20%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 161 
+         Bss Load:
+             Connected Stations:         5
+             Channel Utilization:        36 (14 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 6                 : 94:18:65:b9:a8:48
+         Signal             : 16%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 132 
+         Bss Load:
+             Connected Stations:         5
+             Channel Utilization:        23 (9 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 7                 : 34:98:b5:bd:2c:a8
+         Signal             : 22%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 100 
+         Bss Load:
+             Connected Stations:         5
+             Channel Utilization:        6 (2 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 8                 : e0:46:ee:60:1e:88
+         Signal             : 40%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 52 
+         Bss Load:
+             Connected Stations:         7
+             Channel Utilization:        18 (7 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 9                 : e0:46:ee:5f:d8:48
+         Signal             : 87%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 116 
+         Bss Load:
+             Connected Stations:         6
+             Channel Utilization:        11 (4 %)
+             Medium Available Capacity:  0 (0 us/s)
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 2 : Realme 10 Pro 5G
+    Network type            : Infrastructure
+    Authentication          : WPA3-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 16:d5:1c:4d:e8:96
+         Signal             : 70%  
+         Radio type         : 802.11ac
+         Band               : 2.4 GHz
+         Channel            : 11 
+         Details            :  (H2E Not supported) 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 3 : Sai
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 26:d7:cf:cf:61:59
+         Signal             : 60%  
+         Radio type         : 802.11ac
+         Band               : 2.4 GHz
+         Channel            : 6 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 4 : Redmi Note 11 Pro+ 5G
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : a2:3e:2c:ea:48:79
+         Signal             : 46%  
+         Radio type         : 802.11ac
+         Band               : 2.4 GHz
+         Channel            : 1 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 5 : SANTHOSH 
+    Network type            : Infrastructure
+    Authentication          : WPA3-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 9e:a0:64:27:4e:84
+         Signal             : 62%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 48 
+         Details            :  (H2E Not supported) 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 1
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 6 : Manii≡ƒñÄ
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 12:47:a7:54:aa:64
+         Signal             : 83%  
+         Radio type         : 802.11ac
+         Band               : 2.4 GHz
+         Channel            : 12 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 7 : DIRECT-LZNAVEENmsWS
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : ba:d5:7a:36:cb:39
+         Signal             : 92%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 48 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 8 : Krish iPhone
+    Network type            : Infrastructure
+    Authentication          : WPA3-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 8e:36:cd:79:fd:e7
+         Signal             : 83%  
+         Radio type         : 802.11ax
+         Band               : 5 GHz
+         Channel            : 149 
+         Details            :  (H2E supported) 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 9 : Lidar12
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 96:d4:24:a3:75:23
+         Signal             : 75%  
+         Radio type         : 802.11n
+         Band               : 2.4 GHz
+         Channel            : 11 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) :
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 10 : Abc
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 36:e5:5b:9b:b7:96
+         Signal             : 99%  
+         Radio type         : 802.11ac
+         Band               : 2.4 GHz
+         Channel            : 1 
+         QoS MSCS Supported    : 0
+         QoS Map Supported     : 0
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+

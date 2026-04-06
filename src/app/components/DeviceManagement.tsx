@@ -1,10 +1,13 @@
 import { Cpu, Wifi, Bluetooth, Plus } from "lucide-react";
 import { useNavigate } from "react-router";
 import { Button } from "./ui/button";
+import { useState, useEffect } from "react";
+import { useAuth } from "../context/AuthContext";
 
-const devices = [
+const demoDevices = [
   {
-    name: "pH Sensor Module",
+    id: "demo1",
+    name: "pH Sensor Module (Demo)",
     type: "ESP32-DevKit",
     connection: "WiFi",
     status: "online",
@@ -12,25 +15,31 @@ const devices = [
     battery: "95%"
   },
   {
-    name: "Temperature Probe",
+    id: "demo2",
+    name: "Temperature Probe (Demo)",
     type: "ESP32-S2",
     connection: "Bluetooth",
     status: "online",
     lastSeen: "Active now",
     battery: "82%"
-  },
-  {
-    name: "TDS/EC Sensor",
-    type: "ESP32-DevKit",
-    connection: "WiFi",
-    status: "online",
-    lastSeen: "Active now",
-    battery: "88%"
   }
 ];
 
 export function DeviceManagement() {
   const navigate = useNavigate();
+  const { user } = useAuth();
+  const [realDevices, setRealDevices] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (user?.id) {
+      try {
+        const stored = JSON.parse(localStorage.getItem(`user_devices_${user.id}`) || "[]");
+        setRealDevices(stored);
+      } catch (e) {}
+    }
+  }, [user]);
+
+  const allDevices = [...realDevices, ...demoDevices];
 
   return (
     <section className="py-20 bg-white">
@@ -45,9 +54,9 @@ export function DeviceManagement() {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {devices.map((device, index) => (
+          {allDevices.map((device, index) => (
             <div 
-              key={index}
+              key={device.id || index}
               className={`bg-white rounded-2xl p-6 border-2 ${
                 device.status === 'online' ? 'border-green-200' : 'border-gray-200'
               } shadow-sm hover:shadow-lg transition-shadow`}
